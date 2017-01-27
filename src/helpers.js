@@ -1,9 +1,11 @@
 // Helper functions to use in the app
 
+// formats the price with regex
 export function formatPrice(cents) {
   return `$${(cents / 100).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',')}`;
 }
 
+// returns a random element of the array
 export function rando(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
 }
